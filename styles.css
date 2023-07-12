@@ -122,14 +122,22 @@ p {
 
 .mail-icon {
     margin-left: 240px;
-    margin-right: 10px;
+    margin-right: 6px;
+    vertical-align: middle;
     fill: var(--font-two-color);
+    line-height: 16px;
+    position: relative;
+    top: -1px;
 }
 
 .phone-icon {
     margin-left: 30px;
-    margin-right: 10px;
+    margin-right: 6px;
+    vertical-align: middle;
     fill: var(--font-two-color);
+    line-height: 16px;
+    position: relative;
+    top: -1px;
 }
 
 .font-position {
@@ -155,18 +163,11 @@ p {
     color: var(--brand-color);
 }
 
-.header-contacts:hover>.mail-icon,
-.header-contacts:hover>.phone-icon,
-.header-contacts:focus>.phone-icon,
-.header-contacts:focus>.mail-icon {
-    stroke: var(--brand-color);
-}
-
-.mail-icon:hover,
-.phone-icon:hover,
-.mail-icon:focus,
-.phone-icon:focus {
-    stroke: var(--brand-color);
+.font-position:hover .mail-icon,
+.font-position:focus .mail-icon,
+.font-position:hover .phone-icon,
+.font-position:focus .phone-icon {
+    fill:var(--brand-color);
 }
 
 /*main (first section)*/
@@ -255,9 +256,12 @@ p {
 
 .icon-text-box {
     background: var(--icon-color);
-    border-radius: 4px;
-    width: 270px;
     height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-box-tittle {
@@ -370,14 +374,20 @@ p {
 
 .social-media-container {
     display: flex;
-    padding-top: 16px;
+    margin-top: 16px;
+
 }
 
-.social-media-icon {
+.card-social-media-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     fill: #AFB1B8;
 }
 
-.social-media-icon:hover {
+.card-social-media-list-link:hover {
     fill: var(--font-three-color);
     border-radius: 50%;
     background-color: var(--brand-color);
@@ -400,11 +410,17 @@ p {
 }
 
 .icon-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     fill: #AFB1B8;
+
 }
 
-.icon-hover:hover,
-.icon-hover:focus {
+.icon-color:hover,
+.icon-color:focus {
     fill: var(--brand-color);
     stroke: var(--brand-color);
 }
@@ -486,6 +502,12 @@ p {
     fill: white;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
 }
 
 .icon-footer:hover,
